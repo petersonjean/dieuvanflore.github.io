@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Abril Fatface');
+@import url('https://fonts.googleapis.com/css?family=Bree Serif');
+@import url('https://fonts.googleapis.com/css?family=Bubbler One');
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+*{
+  box-sizing: border-box;
+}
+
+body  {
+  background-image: url('../img/backImage.png');
+background-position: right top;
+background-repeat: repeat;
+background-attachment: fixed;
+background-color: #fff;
+
+min-height: 100%;
+padding-top: 1%;
+padding-bottom: 70px;
+width: 100%;
+}
+.invitation{
+   color: #404a61;
+   font-size: 70px;
+   font-family: "Bubbler One";
+   text-align: center;
+   line-height: 0.7em;
+}
+.names {
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    line-height: 1em;
+    font-family: "Bree Serif", serif;
+    color: #ffd2c3;
+}
+.names-separator{
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1em;
+  font-family: "Bree Serif", serif;
+  color: #ffd2c3;
+}
+@media only screen and (max-width: 767px) {
+  .names {
+    font-size: 55px;
+  }
+}
+
+.wrapper-description {
+    margin: 20px auto 0;
+    max-width: 58.85em;
+    position: relative;
+    z-index: 2;
+}
+.mcard{
+	width: 70%;
+	padding: 10px;
+  height: 50%;
+	margin :auto;
+	box-shadow: 0 4px 8px 0 grey;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.mcard-slide{
+  border: 2px solid whitesmoke;
+  background-color:  white;
+}
+.mcard-footer{
+  background: #f4f7f8;
+}
+.mcard-img-top{
+	border: 1px solid #0A4958;
+  height: 80%;
+	width: 80%;
+  margin: auto;
+	display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.mcard:hover {
+    box-shadow: 0 8px 16px 0 grey;
+}
+.mcard-block {
+	padding: 2px 16px;
+}
+.mcard .invitation-body-text {
+  color: #404a61;
+  font-size: 30px;
+  font-family: "Bubbler One";
+  text-align: center;
+  line-height: 1em;
+  margin: auto;
+
+}
+
+/* countdown css style*/
+h1{
+  color: #396;
+  font-weight: 50;
+  font-size: 20px;
+  margin: 30px 0px 10px;
+}
+
+#clockdiv{
+
+	font-family: sans-serif;
+	color: #404a61;
+	display: inline-block;
+	font-weight: 90;
+	text-align: center;
+	font-size: 20px;
+}
+
+#clockdiv > div{
+	padding: 7px;
+	border-radius: 3px;
+	background: #98D2BE;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 9px;
+	border-radius: 3px;
+	background: #86ACA4;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 4px;
+	font-size: 12px;
+}
+
+/*Style for the invitation form*/
+#input-form{
+  width: 50%;
+  margin: auto;
+}
+#input-form  >input, #input-form >label {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 20px;
+  margin: 0;
+  outline: 0;
+  width: 100%;
+  color: #8a97a0;
+  margin-bottom: 20px;
+}
+#input-form  >input {
+  background: rgba(255,255,255,.1);
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  padding: 9px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e8eeef;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+#input-form  button {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #f77973;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #f9b9b5;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+legend {
+   margin: auto;
+   font-family: Georgia;
+    font-size: 2.4em;
+    margin-bottom: 10px;
+    border: 0;
+    color: #717171;
+}
+legend .number {
+    background: #f77973;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: .8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0;
+}
+#input-feedback{
+   color: #404a61;
+   font-size: 30px;
+   font-family: "Bubbler One";
+   text-align: center;
+   line-height: 0.7em;
+}
+ 
