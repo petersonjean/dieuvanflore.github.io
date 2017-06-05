@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1">
     <title>Marriage de X et Y</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-      <script   src="js/script"></script>
-      <link rel="stylesheet" href="css/demo.css?v=2">
-      <script src="js/modernizr.custom.34807.js"></script>
+      <link rel="stylesheet" href="css/thumbnail-slider.css">
   </head>
   <body >
       <div class="background-wrapper">
@@ -51,22 +48,26 @@
           </div>
           <!--  fin slides 1-->
             <!--  debut slides 2- wrapper for invitaion text and photo album-->
-            <div class="mcard  "  >
+            <div class="mcard mcard-slide mcard-slideshow "  >
               <div id="container">
-                <span id="information" style="display:none">Your browser doesn't support CSS3 3D Transform</span>
-                <h1>Flyout Image Slider Using jQuery & CSS3</h1>
-                <div id="itemlist">
-                  <img src="img/IMG1.jpg" alt="Busby" id="busby" />
-                  <img src="img/IMG2.jpg" alt="Gridly" id="gridly" />
-                  <img src="img/IMG5.jpg" alt="Reco" id="reco" />
-                  <img src="img/IMG6.jpg" alt="Theblog" id="theblog" />
-                </div>
+                <div id="thumbnail-slider">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <a class="thumb" href="img/final1.jpg"></a>
+                            </li>
+                            <li>
+                                <a class="thumb" href="img/final2.jpg"></a>
+                            </li>
+                            <li>
+                                <a class="thumb" href="img/final3.jpg"></a>
+                            </li>
+                            <li>
+                                <a class="thumb" href="img/final4.jpg"></a>
+                            </li>
 
-                <div id="itemdescription">
-                  <span data-for="busby">Busby Theme</span>
-                  <span data-for="gridly">Gridly Theme</span>
-                  <span data-for="reco">Reco Theme</span>
-                  <span data-for="theblog">The Blog Theme</span>
+                        </ul>
+                    </div>
                 </div>
               </div>
             </div>
@@ -81,7 +82,7 @@
                   Après quatre années de bonne préparation, maintenant ils vont dire oui
                    devant Dieu et devant leurs familles et amis.
               </p>
-               <img class="mcard-img-top" src = "img/IMG1.jpg"/>
+               <!--<img class="mcard-img-top" src = "img/IMG1.jpg"/>-->
             </div>
               <!--  fin slides 2-->
                 <!--  debut slides 3 registration-->
@@ -107,7 +108,9 @@
 
 
       </div>
+      <script src="js/jquery-3.2.1.min.js"></script>
       <script language="JavaScript" src="js/countdown.js"></script>
+        <script language="JavaScript" src="js/thumbnail-slider.js"></script>
       <script>
     $('#input-form').one('submit',function(){
         $('.error').remove();
