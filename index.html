@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1">
     <title>Marriage de X et Y</title>
     <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/thumbnail-slider.css">
+    <link rel="stylesheet" href="css/liststyle.css">
   </head>
   <body >
       <div class="background-wrapper">
@@ -25,6 +25,7 @@
               <span>Flore</span>
             </div>
             <div class="wrapper-description">
+
               <div id="clockdiv">
                  <div>
                    <span class="days"></span>
@@ -43,6 +44,8 @@
                    <div class="smalltext">Seconds</div>
                  </div>
               </div>
+              <br>
+              <span class="invitation-date">8 Sept 2017 <br> 00:00pm</span>
             </div>
 
           </div>
@@ -50,32 +53,24 @@
             <!--  debut slides 2- wrapper for invitaion text and photo album-->
             <div class="mcard mcard-slide mcard-slideshow "  >
               <div id="container">
-                <div id="thumbnail-slider">
-                    <div class="inner">
-                        <ul>
-                            <li>
-                                <a class="thumb" href="img/final1.jpg"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/final2.jpg"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/final3.jpg"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/final4.jpg"></a>
-                            </li>
-
-                        </ul>
-                    </div>
+                <div class="cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-pause-on-hover="true"
+                data-cycle-speed="200"
+                data-cycle-prev="#prev"
+                data-cycle-next="#next"
+                data-cycle-center-horz=true
+                data-cycle-center-vert=true >
+                   <img src="img/final1.jpg">
+                   <img src="img/final2.jpg">
+                   <img src="img/final3.jpg">
+                   <img src="img/final4.jpg">
                 </div>
               </div>
             </div>
               <div class="mcard mcard-slide animated bounceIn"  >
-              <p class='invitation-body-text'>Les familles CHARLES & PIERRE tiennent à vous remercier pour la pleine
-                confiance que vous avez placée en elles. DU même coup, elles profitent
-                 pour vous inviter à prendre part à la célébration nuptiale  de leurs
-                 enfants Jenny-Flore & Dieuva qui tiendra place à la Paroisse St Martin
+              <p class='invitation-body-text'>Le couple Jenny-Flore & Dieuva  vous remercie pour votre confiance en leur amour. DU même coup, il profite
+                 pour vous inviter à prendre part à leur célébration nuptiale  qui  tiendra place à la Paroisse St Martin
                   de Tours à Port-au-Prince. Déjà, elles vous remercient de votre présence.
                   <br>
                   <br>
@@ -99,10 +94,71 @@
                           <input type="radio" name="reponse"  class="input-reponseInvitation" value="Oui">Oui<br>
                           <input type="radio" name="reponse" class="input-reponseInvitation" value="Non">Non<br>
                       </label>
+                      <label for="">Nous offrez-vous un cadeau<br/>
+                        <input type="radio" name="reponse"  class="input-reponseInvitation" value="Oui">Oui<br>
+                          <input type="radio" name="reponse" class="input-reponseInvitation" value="Non">Non<br>
+                      </label>
+                      <select class="">
+                        <option value="  " selected disabled> PS: La liste de cadeau sera disponible sous peu </option>
+                         <option value=" réfrigérateur ">  </option>
+                         <option value=" four à gaz ">  </option>
+                         <option value="micro onde ">  </option>
+                         <option value="blender ">  </option>
+                         <option value=" ventilateur ">  </option>
+                        <option value="TV ">  </option>
+                        <option value=" radio ">  </option>
+                        <option value=" fer à repasser">   </option>
+                        <option value=" machine à laver ">  </option>
+                        <option value=" cafetière ">  </option>
+                        <option value=" toaster ">  </option>
+                        <option value=" water  cooler ">  </option>
+                        <option value=" tasses ">  </option>
+                        <option value=" verres  ">  </option>
+                        <option value=" couverts ">  </option>
+                        <option value=" assietes ">  </option>
+                        <option value=" rideaux">   </option>
+                        <option value=" draps">  </option>
+                        <option value=" jeu de couteaux ">  </option>
+                        <option value=" coffee maker">  </option>
+                        <option value="Lampe de nuit">  </option>
+                      </select>
                       <input id="input-email" placeholder="Votre email" name="q4">
                       <button id="form-submit" type="submit">SUBMIT</button>
                   </form>
                    <p id="input-feedback"></p>
+
+                  <!--  gift list -->
+                  <legend>
+                    <span class="number">*</span>
+                    <a class="gift-link" href="#list-type2">Cliquez ici pour la liste de Cadeau</a>
+                  </legend>
+                  <div class="list-type2" id="list-type2">
+                    <ol>
+                      <li><a href="#">réfrigérateur</a>
+                      <li><a href="#">Four à gaz </a>
+                      <li><a href="#">Micro onde (micro wave) </a>
+                      <li><a href="#">Blender </a>
+                      <li><a href="#">Ventilateur</a>
+                      <li><a href="#">TV </a>
+                      <li><a href="#">Radio </a>
+                      <li><a href="#">Fer à repasser </a>
+                      <li><a href="#">Machine à laver</a>
+                      <li><a href="#">Cafetière </a>
+                      <li><a href="#">Toaster </a>
+                      <li><a href="#">Water  cooler</a>
+                      <li><a href="#">Tasses </a>
+                      <li><a href="#">Verres(a eau,  a pied)</a>
+                      <li><a href="#">Couverts (couteaux, fourchettes, grdes et ptites cuillères)
+                      <li><a href="#">Assietes </a>
+                      <li><a href="#">Rideaux </a>
+                        <li><a href="#">Jeu de couteaux</a>
+                      <li><a href="#">Draps</a>
+                      <li><a href="#">Coffee maker</a>
+                      <li><a href="#">Lampe de nuit</a>
+                      </ol>
+                  </div>
+
+
                   <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
                 </div>
 
@@ -110,41 +166,8 @@
       </div>
       <script src="js/jquery-3.2.1.min.js"></script>
       <script language="JavaScript" src="js/countdown.js"></script>
-        <script language="JavaScript" src="js/thumbnail-slider.js"></script>
-      <script>
-    $('#input-form').one('submit',function(){
-        $('.error').remove();
-        var inputq1 = encodeURIComponent($('#input-nom').val());
-        var inputq2 = encodeURIComponent($('#input-prenom').val());
-        var inputq3 = encodeURIComponent($('.input-reponseInvitation:checked').val());
-        var inputq4 = encodeURIComponent($('#input-email').val());
-        var q1ID = "entry.1003926060";
-        var q2ID = "entry.204419478";
-        var q3ID = "entry.1984655021";
-        var q4ID = "entry.1337704207";
+      <script language="JavaScript" src="js/script.js"></script>
 
-        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdLv_Ycj9u65jqiEsy4Li9mQFrLTlTdPXpzepDBgZiTgZMTFQ/formResponse?';
-        var submitRef = '&submit=3454553694072844193';
-        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
-      //  console.log(submitURL);
-
-        if (inputq1 ==="" && inputq2 ==="" ){
-          $('legend').after("<br><p class='error' style='color:red'>Veuillez inserer votre nom et prenom</p>");
-          $(this)[0].action="";
-        }
-      else {
-        $(this)[0].action=submitURL;
-          $('#input-form ').hide();
-        $('#input-feedback').text("Merci d'avoir répondu ,nous vous contacterons :).");
-      }
-
-
-    });
-    //https://github.com/heaversm/google-custom-form
-</script>
-<script> if(!Modernizr.csstransforms3d) document.getElementById('information').style.display = 'block'; </script>
-<script>!window.jQuery && document.write(unescape('%3Cscript src="javascript/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
-<script src="js/demo.js"></script>
-
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
      </body>
 </html>

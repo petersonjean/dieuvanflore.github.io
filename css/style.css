@@ -34,6 +34,7 @@ width: 100%;
    text-align: center;
    line-height: 0.7em;
 }
+
 .names {
     font-size: 100px;
     text-align: center;
@@ -50,17 +51,21 @@ width: 100%;
   font-family: "Bree Serif", serif;
   color: #ffd2c3;
 }
-@media only screen and (max-width: 767px) {
-  .names {
-    font-size: 55px;
-  }
+.invitation-date{
+  color: #404a61;
+  font-size: 15px;
+  font-family: "Bubbler One";
+  text-align: center;
+  line-height: 0.3em;
+  font-weight: bold;
 }
 
 .wrapper-description {
     margin: 20px auto 0;
     max-width: 58.85em;
-    position: relative;
-    z-index: 2;
+    /*position: relative;
+    z-index: 2;*/
+    text-align: center;
 }
 .mcard{
 	width: 70%;
@@ -146,7 +151,7 @@ h1{
   width: 50%;
   margin: auto;
 }
-#input-form  >input, #input-form >label {
+#input-form  >input, #input-form >label , #input-form >select{
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 20px;
   margin: 0;
@@ -155,7 +160,7 @@ h1{
   color: #8a97a0;
   margin-bottom: 20px;
 }
-#input-form  >input {
+#input-form  >input, select {
   background: rgba(255,255,255,.1);
   border: 0;
   border-radius: 4px;
@@ -204,6 +209,11 @@ legend .number {
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 15px 15px 15px 0;
 }
+legend a {
+    text-decoration: none;
+    list-style: none;
+    color: #717171;
+}
 #input-feedback{
    color: #404a61;
    font-size: 30px;
@@ -211,12 +221,22 @@ legend .number {
    text-align: center;
    line-height: 0.7em;
 }
-.container {
-   width: 500px;
+#container {
+   width: 600px;
    height: 400px;
+   position: relative;
 }
 .mcard-slideshow{
   height : 400px !important;
+}
+.cycle-slideshow {
+    position: relative;
+    width: 45%;
+    height:300px !important;
+}
+img {
+  border-radius: 10px 10px 10px 10px !important;
+   border: 5px solid #e9aeaa;
 }
 @media screen and (min-width: 200px) and (max-width: 640px) {
   .invitation{
@@ -233,15 +253,23 @@ legend .number {
   .mcard {
     width: 85%;
   }
+
   #clockdiv {
     font-weight: 70;
     font-size: 15px;
 }
 .mcard-slideshow {
-    height: 250px !important;
+
+    height: 350px !important;
     padding-top: 10px !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 10px !important;
     margin-bottom: 0;
+}
+.cycle-slideshow {
+    position: relative;
+    width: auto !important;
+    height: auto !important;
+    margin: auto !important;
 }
 .thumb {
     border: 4px solid #ffd2c3;
@@ -253,7 +281,7 @@ legend .number {
 legend {
     font-size: 1.1em;
 }
-#input-form > input, #input-form > label {
+#input-form > input, #input-form > label,  #input-form >select {
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -262,6 +290,11 @@ legend {
     font-size: 15px;
     border-width: 1px 1px 3px;
     margin-bottom: 0;
+}
+#container {
+    width: 80%;
+    height: 400px !important;
+    margin: auto;
 }
  }
 
