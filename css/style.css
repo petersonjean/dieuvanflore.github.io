@@ -267,8 +267,8 @@ img {
 }
 .cycle-slideshow {
     position: relative;
-    width: auto !important;
-    height: auto !important;
+    width: 100% !important;
+    height: 100% !important; 
     margin: auto !important;
 }
 .thumb {
