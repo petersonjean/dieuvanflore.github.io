@@ -67,7 +67,7 @@ giftList_available.sort();
 var giftList_Taken= [];
 
 //function that retrieve the list of seelected gift from the spreadsheet on googledrive using the google api explorer
-$.getJSON('https://sheets.googleapis.com/v4/spreadsheets/1EW0v6Retxj9_LFraUxQDjY6-UdvhWIxBLUQbOHZOuNo/values/g2%3Ag5?key=AIzaSyBvyJ-3XmqfZhThVnYU68nR32pnVyf0Ao0' , function(data) {
+$.getJSON('https://sheets.googleapis.com/v4/spreadsheets/1EW0v6Retxj9_LFraUxQDjY6-UdvhWIxBLUQbOHZOuNo/values/g2%3Ag120?key=AIzaSyBvyJ-3XmqfZhThVnYU68nR32pnVyf0Ao0' , function(data) {
          //Si la liste est vide on affiche l'ensemble des cadeaux
         if(data.values.length ===0){
           $.each(giftList_available, function(index, element){
