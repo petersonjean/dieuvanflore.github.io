@@ -33,12 +33,8 @@ $('#input-form').one('submit',function(){
     var submitRef = '&submit=3454553694072844193';
     var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID +  "=" + inputq4 + "&" + q5ID + "=" + inputq5+ "&" + q6ID + "=" + inputq6  + submitRef);
 
-<<<<<<< HEAD
     if (inputq1 === "" && inputq2 === "" ){
-=======
-    if ( inputq1 === "" && inputq2 === "" ){
->>>>>>> 00b3cf5... gift-list registration mini-system
-      $('legend').after("<br><p class='error' style='color:red'>Veuillez inserer votre nom et prenom</p>");
+      $('legend').after("<br><p class = 'error' style='color:red'>Veuillez inserer votre nom et prenom</p>");
       $(this)[0].action="";
     }
   else {
