@@ -53,11 +53,12 @@ width: 100%;
 }
 .invitation-date{
   color: #404a61;
-  font-size: 15px;
-  font-family: "Bubbler One";
-  text-align: center;
-  line-height: 0.3em;
-  font-weight: bold;
+font-size: 30px;
+font-family: "Bubbler One";
+text-align: center;
+line-height: 0.6em;
+font-weight: bold;
+margin-bottom: 10px;
 }
 
 .wrapper-description {
@@ -125,6 +126,7 @@ h1{
 	font-weight: 90;
 	text-align: center;
 	font-size: 20px;
+  margin-bottom: 10px;
 }
 
 #clockdiv > div{
@@ -173,6 +175,10 @@ h1{
   -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
+#input-form  > select {
+  display: none;
+}
+
 #input-form  button {
     position: relative;
     display: block;
@@ -243,6 +249,11 @@ img {
      font-size: 40px;
      line-height: 0.7em;
   }
+  .invitation-date{
+
+  font-size: 15px;
+  margin-bottom: 10px;
+  }
   .names {
     font-size: 45px;
     line-height: 0.6em;
@@ -268,7 +279,7 @@ img {
 .cycle-slideshow {
     position: relative;
     width: 100% !important;
-    height: 100% !important; 
+    height: 100% !important;
     margin: auto !important;
 }
 .thumb {
