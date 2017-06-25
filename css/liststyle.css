@@ -61,6 +61,9 @@ color:#FFF;
 
 border-radius: 100%;
 }
+.gift_taken{
+  text-decoration: line-through;
+}
 
 /* mobile view*/
 @media screen and (min-width: 200px) and (max-width: 640px) {
