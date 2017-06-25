@@ -34,7 +34,7 @@ $('#input-form').one('submit',function(){
     var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID +  "=" + inputq4 + "&" + q5ID + "=" + inputq5+ "&" + q6ID + "=" + inputq6  + submitRef);
 
     if (inputq1 === "" && inputq2 === "" ){
-      $('legend').after("<br><p class = 'error' style='color:red'>Veuillez inserer votre nom et prenom</p>");
+      $('legend').after("<br><p class = 'error' style ='color:red'>Veuillez inserer votre nom et prenom</p>");
       $(this)[0].action="";
     }
   else {
