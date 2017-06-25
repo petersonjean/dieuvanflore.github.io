@@ -18,7 +18,7 @@ $('#input-form').one('submit',function(){
     var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
   //  console.log(submitURL);
 
-    if (inputq1 ==="" && inputq2 ==="" ){
+    if (inputq1 === "" && inputq2 === "" ){
       $('legend').after("<br><p class='error' style='color:red'>Veuillez inserer votre nom et prenom</p>");
       $(this)[0].action="";
     }
@@ -33,7 +33,8 @@ $('#input-form').one('submit',function(){
 
 
 //https://github.com/heaversm/google-custom-form
-/* gift list managment*/
+
+/* gift list managemment*/
 $('.gift-link').click(function(){
   $('.list-type2').toggle();
 });
