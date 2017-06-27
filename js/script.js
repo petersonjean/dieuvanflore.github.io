@@ -1,6 +1,6 @@
 'use strict'
 //we blank the form  to prevent user from duplicate entries
-$('#input-form')[0].reset();
+//$('#input-form')[0].reset();
 
 //if user chooses to offer a gift we unhides the gift list else it remains hidden
 $('.gift-decision > input').click(function(){
