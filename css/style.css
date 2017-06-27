@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bree Serif');
 @import url('https://fonts.googleapis.com/css?family=Bubbler One');
 @import url('https://fonts.googleapis.com/css?family=Shadows Into Light');
+@import url('https://fonts.googleapis.com/css?family=Lovers Quarrel ');'
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
@@ -103,7 +104,8 @@ margin-bottom: 10px;
 .mcard .invitation-body-text {
   color: #404a61;
   font-size: 30px;
-  font-family: "Bubbler One";
+  *font-family: "Bubbler One";
+  font-family: "Lovers Quarrel";
   text-align: center;
   line-height: 1em;
   margin: auto;

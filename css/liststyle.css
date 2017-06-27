@@ -10,7 +10,7 @@ margin: auto;
 counter-reset: li;
 list-style: none;
 *list-style: decimal;
-font-size: 15px;
+font-size: large ;
 *font-family: 'Raleway', sans-serif;
 font-family: 'Shadows Into Light', sans-serif;
 padding: 0;
