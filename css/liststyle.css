@@ -62,7 +62,7 @@ color:#FFF;
 border-radius: 100%;
 }
 .list-type2 .gift_taken {
-  text-decoration: line-through;
+  /*text-decoration: line-through;*/
 }
 
 /* mobile view*/
