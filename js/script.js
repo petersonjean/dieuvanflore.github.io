@@ -1,6 +1,6 @@
 'use strict'
 //we blank the form  to prevent user from duplicate entries
-//$('#input-form')[0].reset();
+$('#input-form')[0].reset();
 
 //if user chooses to offer a gift we unhides the gift list else it remains hidden
 $('.gift-decision > input').click(function(){
@@ -19,18 +19,20 @@ $('#input-form').one('submit',function(){
     var inputq4 = encodeURIComponent($('#input-email').val());
     var inputq5 = encodeURIComponent($('.input-reponseGift:checked').val());
     //on verifie si la personne veut choisir un cadeau , si oui on enregistre son cadeau choisi sinon on envoie rien
-    var inputq5 = $('.input-reponseGift:checked').val() === 'Oui'  ?  inputq5 = encodeURIComponent($('#input-gift').val()) : "";
+    var inputq6 = $('.input-reponseGift:checked').val() === 'Oui'  ?  inputq6 = encodeURIComponent($('.gift-select option:selected').val()) : "";
 
     var q1ID = "entry.1003926060" ;//Non
     var q2ID = "entry.204419478" ;//Prenom
     var q3ID = "entry.1984655021" ;//confirmation
     var q4ID = "entry.1337704207" ;//email
     var q5ID = "entry.1717756256" ;//reponse cadeau
-    var q5ID = "entry.276914198" ;//cadeaux choisis
+    var q6ID = "entry.276914198" ;//cadeaux choisis
 
     //creation de l'url de submission
+
     var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdLv_Ycj9u65jqiEsy4Li9mQFrLTlTdPXpzepDBgZiTgZMTFQ/formResponse?';
-    var submitRef = '&submit=3454553694072844193';
+  //  var submitRef = '&submit=3454553694072844193';
+      var submitRef = '&submit=5360371415756194249';
     var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID +  "=" + inputq4 + "&" + q5ID + "=" + inputq5+ "&" + q6ID + "=" + inputq6  + submitRef);
 
     if (inputq1 === "" && inputq2 === "" ){
@@ -91,8 +93,8 @@ $.getJSON('https://sheets.googleapis.com/v4/spreadsheets/1EW0v6Retxj9_LFraUxQDjY
                 return i != element[0]
 
               });
-               console.log(giftList_available);
-               console.log(giftList_Taken);
+               //console.log(giftList_available);
+               //console.log(giftList_Taken);
 
 
        });

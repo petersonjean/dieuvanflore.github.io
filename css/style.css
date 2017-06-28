@@ -103,7 +103,7 @@ margin-bottom: 10px;
 }
 .mcard .invitation-body-text {
   color: #404a61;
-  font-size: 30px;
+  font-size: 3em;
   *font-family: "Bubbler One";
   font-family: "Lovers Quarrel";
   text-align: center;
@@ -288,7 +288,7 @@ img {
     border: 4px solid #ffd2c3;
 }
 .mcard .invitation-body-text {
-    font-size: 20px;
+    font-size: 2em;
     line-height: 0.8em;
 }
 legend {
