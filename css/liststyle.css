@@ -65,18 +65,14 @@ border-radius: 100%;
 .list-type2 .gift_taken {
   text-decoration: line-through;
 }
-.list-type2 .gift_taken::after {
-   content: "";
-    width: 30px;
-    height: 30px;
-    background: url('../img/strike-gift.png') no-repeat -30px -50px no-scroll;
-    top: 10px;
-    right: 5px;
-    position: absolute;
-
+.list-type2 .gift_taken a:after{
+    display: inline;
+  margin:auto;
+  padding:auto;
+    content: url('../img/gift-locked-big.png');
+    width: 48px;
+    height: 48px;
 }
-
-
 /* mobile view*/
 @media screen and (min-width: 200px) and (max-width: 640px) {
 .list-type2 a::before {
@@ -89,6 +85,14 @@ border-radius: 100%;
 }
 .list-type2 ol{
     columns:1;
+}
+.list-type2 .gift_taken a:after{
+    display: inline;
+    margin:auto;
+    padding:auto;
+    content: url('../img/gift-locked-small.png');
+    width: 24px;
+    height: 24px;
 }
 }
 @media screen and (min-width: 640px) and (max-width: 800px) {

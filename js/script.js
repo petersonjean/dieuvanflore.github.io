@@ -64,7 +64,7 @@ $('.gift-link').click(function(){
  if specific item from the gift list has been chosen so it is removed from the gift array*/
 
 //Liste des cadeaux disponibles
-var giftList_available=[ "Réfrigérateur","Four à gaz ","Micro onde", "Blender ","Ventilateur","TV ","Radio ","Fer à repasser ", "Machine à laver", "Cafetière ", "Toaster ", "Water  cooler", "Tasses ", "Verres", "Couverts", "Assietes ", "Rideaux ",   "Jeu de couteaux", "Draps", "Coffee maker", "Lampe de nuit"];
+var giftList_available=[ "Réfrigérateur","Four à gaz ", "Micro onde", "Blender ","Ventilateur","TV ","Radio ","Fer à repasser ", "Machine à laver", "Cafetière ", "Toaster ", "Water  cooler", "Tasses ", "Verres à eau ","Verres à pied ", "Couverts de table", "Assietes ", "Rideaux pour portes","Rideaux pour fenetres",   "Jeu de couteaux", "Draps", "Coffee maker", "Lampe de nuit"];
 giftList_available.sort();
 //Liste des cadeaux selectionnés
  var giftList_Taken= [];
