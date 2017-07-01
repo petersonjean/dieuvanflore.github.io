@@ -244,8 +244,12 @@ legend a {
     height:300px !important;
 }
 img {
-  border-radius: 10px 10px 10px 10px !important;
-   border: 5px solid #e9aeaa;
+    border-radius: 10px 10px 10px 10px !important;
+    border: 5px solid #e9aeaa;
+    position: absolute !important;
+    margin: 0 0 0 -116px;
+    left: 50% !important;
+
 }
 @media screen and (min-width: 200px) and (max-width: 640px) {
   .invitation{
@@ -281,9 +285,9 @@ img {
 }
 .cycle-slideshow {
     position: relative;
-    width: 100% !important;
     height: 100% !important;
-    margin: auto !important;
+    width: 100% !important;
+
 }
 .thumb {
     border: 4px solid #ffd2c3;
@@ -306,9 +310,11 @@ legend {
     margin-bottom: 0;
 }
 #container {
-    width: 80%;
-    height: 400px !important;
-    margin: auto;
+  width: 80vw;
+  height: 100vw !important;
+  margin: auto;
+  position: relative;
+
 }
  }
 
