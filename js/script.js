@@ -104,7 +104,7 @@ $.getJSON('https://sheets.googleapis.com/v4/spreadsheets/1EW0v6Retxj9_LFraUxQDjY
              });
               //on ajoute les elements deja choisis a la liste de cadeaux
              $.each(giftList_Taken,function(index,element2){
-                 $('.list-type2 ol').append("<li class='gift_taken'><a href='#'>"+ element2+"</a></li>");
+                 $('.list-type2 ol').append("<li class='gift_taken'><span class='strike'><a href='#'>"+ element2+"</a></span></li>");
              });
            }
               //on ajoute autres en fin de liste pour le dropdown.

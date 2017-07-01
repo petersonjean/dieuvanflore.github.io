@@ -65,6 +65,21 @@ border-radius: 100%;
 .list-type2 .gift_taken {
   text-decoration: line-through;
 }
+.list-type2 .gift_taken::after {
+   content: url('../img/strike-gift.png');
+}
+.list-type2 .strike{
+    position: relative;
+}
+
+.list-type2 .strike::after{
+    content: '';
+    border-bottom: 7px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+}
 
 /* mobile view*/
 @media screen and (min-width: 200px) and (max-width: 640px) {
